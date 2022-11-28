@@ -4,7 +4,6 @@ import About from './containers/About'
 import Hero from './containers/Hero'
 import Contact from './containers/Contact'
 import SocialMediaLinks from './components/SocialMediaProfiles'
-import JumpToTop from './components/JumpToTop'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Experiences from './containers/Experiences'
 
