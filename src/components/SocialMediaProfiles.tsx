@@ -33,7 +33,7 @@ const SocialMediaProfiles = () => {
     return (
         <div className="absolute left-4 bottom-16">
             {profiles.map((profile, index) => (
-                <li>profile.name</li>
+                <li key={index}>{profile.name}</li>
             ))}
         </div>
     );

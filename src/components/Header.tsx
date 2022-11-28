@@ -39,24 +39,16 @@ const Header = () => {
             <nav>
                 <ul>
                     {navItems.map((navItem, index) => (
-                        <li>navItem.title</li>
+                        <li key={index}>{navItem.title}</li>
                     ))}
                     {theme == "light" ? (
                         <IoMdMoon
-                            className={`w-8 h-8 ml-6 p-1 ${
-                                !displayNavBar && displayLogo
-                                    ? "dark:text-white text-ourBlack hover:bg-red-200/50 dark:hover:bg-gray-100/50"
-                                    : "text-white hover:bg-gray-100/50"
-                            } hover:bg-gray-100/50 rounded-md cursor-pointer transition-colors ease-in-out`}
+                            className="w-8 h-8 ml-6 p-1 dark:text-white text-ourBlack hover:bg-gray-100/50 rounded-md cursor-pointer transition-colors ease-in-out"
                             onClick={toggleThemeMode}
                         />
                     ) : (
                         <IoMdSunny
-                            className={`w-8 h-8 ml-6 p-1 ${
-                                !displayNavBar && displayLogo
-                                    ? "dark:text-white text-ourBlack hover:bg-gray-500 dark:hover:bg-gray-100/50"
-                                    : "text-white hover:bg-gray-100/50"
-                            } rounded-md cursor-pointer transition-colors ease-in-out`}
+                            className="w-8 h-8 ml-6 p-1 dark:text-white text-ourBlack rounded-md cursor-pointer transition-colors ease-in-out"
                             onClick={toggleThemeMode}
                         />
                     )}

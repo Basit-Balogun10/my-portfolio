@@ -26,7 +26,7 @@ const techStacks: techStacksType[] = [
 
 const About = () => {
   return (
-      <section>
+      <section className="dark:bg-mainColor dark:text-white">
           <h2>About Me</h2>
 
           <div className="flex justify-center items-center">
@@ -49,11 +49,9 @@ const About = () => {
                   </p>
 
                   <ul>
-                    {
-                        techStacks.map((tech, index) => (
-                            <li>tech.name</li>
-                        ))
-                    }
+                      {techStacks.map((tech, index) => (
+                          <li key={index}>{tech.name}</li>
+                      ))}
                   </ul>
               </div>
 

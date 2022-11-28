@@ -6,6 +6,7 @@ import Contact from './containers/Contact'
 import SocialMediaLinks from './components/SocialMediaProfiles'
 import JumpToTop from './components/JumpToTop'
 import { ThemeProvider } from './contexts/ThemeContext'
+import Experiences from './containers/Experiences'
 
 function App() {
 const [theme, setTheme] = useState<string>("light");
@@ -27,24 +28,26 @@ const toggleThemeMode = () => {
     if (document.documentElement.classList.contains("dark")) {
         document.documentElement.classList.remove("dark");
         localStorage.setItem("basit-portfolio-theme", "light");
+        setTheme("light")
     } else {
         document.documentElement.classList.add("dark");
         localStorage.setItem("basit-portfolio-theme", "dark");
+        setTheme("dark")
     }
 };
 
   return (
       <ThemeProvider value={{ theme, setTheme, toggleThemeMode }}>
-          <div className="App scroll-smooth">
+          <div className="App dark:bg-mainColor dark:text-white scroll-smooth">
               <div className="absolute right-4 bottom-16">
                   <p>basitbalogun10@gmail.com</p>
               </div>
 
               <SocialMediaLinks />
-              <JumpToTop />
 
               <Hero />
               <About />
+              <Experiences />
               <Contact />
               <button
                   className="bg-red-500 dark:bg-blue-500"
@@ -59,4 +62,6 @@ const toggleThemeMode = () => {
 
 export default App
 
-// TODO: TABS CODE FOR EXPERIENCE AND PROJECTS SECTION
+// todo: make theme button in header functional and remove dummy button in App.tsx
+// todo: keep track of active button tab where necessary
+// todo: write layout for projects archive page
