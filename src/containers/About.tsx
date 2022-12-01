@@ -26,7 +26,7 @@ const techStacks: techStacksType[] = [
 
 const About = () => {
   return (
-      <section className="dark:bg-mainColor dark:text-white">
+      <section>
           <h2>About Me</h2>
 
           <div className="flex justify-center items-center">

@@ -21,6 +21,10 @@ module.exports = {
                 secondaryColor2: "#8b22ec",
                 sec2: "#5336BF",
             },
+            fontFamily: {
+                syne: ['Syne', 'sans-serif'],
+                openSans: ['Open Sans', 'sans-serif']
+            }
         },
     },
     plugins: [],

@@ -38,7 +38,7 @@ const toggleThemeMode = () => {
 
   return (
       <ThemeProvider value={{ theme, setTheme, toggleThemeMode }}>
-          <div className="App dark:bg-mainColor dark:text-white scroll-smooth">
+          <div className="App dark:bg-mainColor dark:text-slate-400 scroll-smooth">
               <div className="fixed right-4 bottom-16">
                   <p>basitbalogun10@gmail.com</p>
               </div>
@@ -56,5 +56,3 @@ const toggleThemeMode = () => {
 }
 
 export default App
-
-// todo: fix icons not rendering in button tabs

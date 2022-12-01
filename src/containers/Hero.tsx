@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="">
               <h4>Hello there, my name is</h4>
               <h1>Basit Balogun.</h1>
-              <h2>I solve problems with code.</h2>
+              <h2 className="text-[80px] font-extrabold">I solve problems with code.</h2>
           </div>
 
           {/* SHORT INTRO */}
