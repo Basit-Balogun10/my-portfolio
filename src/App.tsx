@@ -6,6 +6,7 @@ import Contact from './containers/Contact'
 import SocialMediaLinks from './components/SocialMediaProfiles'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Experiences from './containers/Experiences'
+import Projects from './containers/Projects'
 
 function App() {
 const [theme, setTheme] = useState<string>("light");
@@ -38,7 +39,7 @@ const toggleThemeMode = () => {
   return (
       <ThemeProvider value={{ theme, setTheme, toggleThemeMode }}>
           <div className="App dark:bg-mainColor dark:text-white scroll-smooth">
-              <div className="absolute right-4 bottom-16">
+              <div className="fixed right-4 bottom-16">
                   <p>basitbalogun10@gmail.com</p>
               </div>
 
@@ -46,14 +47,9 @@ const toggleThemeMode = () => {
 
               <Hero />
               <About />
+              <Projects />
               <Experiences />
               <Contact />
-              <button
-                  className="bg-red-500 dark:bg-blue-500"
-                  onClick={toggleThemeMode}
-              >
-                  CHANGE THEME
-              </button>
           </div>
       </ThemeProvider>
   );
@@ -61,6 +57,4 @@ const toggleThemeMode = () => {
 
 export default App
 
-// todo: make theme button in header functional and remove dummy button in App.tsx
-// todo: keep track of active button tab where necessary
-// todo: write layout for projects archive page
+// todo: fix icons not rendering in button tabs

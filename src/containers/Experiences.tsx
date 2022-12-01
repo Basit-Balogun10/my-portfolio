@@ -51,12 +51,12 @@ const tabs: tabType[]= [
   {
     title: "Full-time",
     isActive: false,
-    icon: <IoMdMoon />
+    icon: IoMdMoon
   },
   {
     title: "Volunteering",
     isActive: true,
-    icon: <IoMdSunny />
+    icon: IoMdSunny
   },
 ]
 

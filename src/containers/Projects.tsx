@@ -53,12 +53,12 @@ const tabs: tabType[] = [
     {
         title: "Featured",
         isActive: true,
-        icon: <IoMdMoon />,
+        icon: IoMdMoon,
     },
     {
         title: "Others",
         isActive: false,
-        icon: <IoMdSunny />,
+        icon: IoMdSunny,
     },
 ];
 
