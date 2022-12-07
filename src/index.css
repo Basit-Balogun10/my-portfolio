@@ -66,3 +66,15 @@ a {
 .theme-toggle::focus {
     transform: translateX(60px);
 }
+
+.scale-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scale-on-hover:hover {
+    transform: scale(0.9);
+}
+
+.primary-btn, .secondary-btn {
+    transition: color, background, border, transform 0.3s ease-in-out
+}

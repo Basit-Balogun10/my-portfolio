@@ -67,7 +67,9 @@ const Header = () => {
             <div
                 id="blur-overlay"
                 className={`${
-                    mobileNav ? "backdrop-blur-sm z-50 w-full h-full" : "backdrop-blur-none"
+                    mobileNav
+                        ? "backdrop-blur-sm z-50 w-full h-full"
+                        : "backdrop-blur-none"
                 } fixed top-0 left-0`}
             ></div>
 
@@ -107,6 +109,12 @@ const Header = () => {
                             </span>
                         </li>
                     ))}
+                    <CommonButton
+                        cssClasses="scale-on-hover md:hidden w-2/3"
+                        buttonText="Resume"
+                        isPrimary={false}
+                        width="1/4"
+                    />
                 </ul>
 
                 {theme == "light" ? (

@@ -4,6 +4,7 @@ import About from './containers/About'
 import Hero from './containers/Hero'
 import Contact from './containers/Contact'
 import SocialMediaLinks from './components/SocialMediaProfiles'
+import Header from "./components/Header";
 import { ThemeProvider } from './contexts/ThemeContext'
 import Experiences from './containers/Experiences'
 import Projects from './containers/Projects'
@@ -44,7 +45,7 @@ const toggleThemeMode = () => {
               </div>
               <SocialMediaLinks />
 
-
+              <Header />
               <Hero />
               <About />
               <Projects />
