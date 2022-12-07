@@ -38,12 +38,12 @@ const toggleThemeMode = () => {
 
   return (
       <ThemeProvider value={{ theme, setTheme, toggleThemeMode }}>
-          <div className="App dark:bg-mainColor dark:text-slate-400 scroll-smooth">
+          <div className="App">
               <div className="fixed right-4 bottom-16">
                   <p>basitbalogun10@gmail.com</p>
               </div>
-
               <SocialMediaLinks />
+
 
               <Hero />
               <About />

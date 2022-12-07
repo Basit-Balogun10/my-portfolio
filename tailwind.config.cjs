@@ -14,17 +14,19 @@ module.exports = {
                 // mainColor: "#f472b6",
 
                 mainColor: "#0f0a2f",
-                mainColorLight: "#130d3c",
-                mainColorLighter: "#241f44",
+                lightMainColor: "#130d3c",
+                lighterMainColor: "#241f44",
 
                 secondaryColor: "#63fb9a",
+                dimmedSecondaryColor: "#05d652e8",
                 secondaryColor2: "#8b22ec",
                 sec2: "#5336BF",
             },
             fontFamily: {
                 syne: ['Syne', 'sans-serif'],
-                openSans: ['Open Sans', 'sans-serif']
-            }
+                comfortaa: ['Comfortaa', 'sans-serif'],
+                pacifico: ['Pacifico', 'sans-serif']
+            },
         },
     },
     plugins: [],
