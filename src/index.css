@@ -48,7 +48,7 @@ a {
 }
 
 #blur-overlay {
-    transition: backdrop-filter 1s ease-in-out;
+    transition: backdrop-filter 0.5s ease-in-out;
 }
 
 #nav li {
