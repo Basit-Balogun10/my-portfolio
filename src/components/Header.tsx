@@ -1,5 +1,6 @@
 import React, { useState, useContext, useRef } from "react";
 import { IoMdMoon, IoMdSunny, IoMdClose } from "react-icons/io";
+import { FiMail } from "react-icons/fi";
 import { FaLaptopCode } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
@@ -33,33 +34,28 @@ const navItems: navItemsType[] = [
 const Header = () => {
     const [mobileNav, toggleMobileNav] = useState<boolean>(false);
     const { theme, setTheme, toggleThemeMode } = useContext(themeContext);
-    const darkModeToggle = useRef<HTMLDivElement>(null)
+    const darkModeToggle = useRef<HTMLDivElement>(null);
 
     const handleMobileNavToggle = () => {
-            let mobileNavOpen = document.querySelector<HTMLElement>(
-                ".mobile-nav-open"
-            )
-            let mobileNavClose = document.querySelector<HTMLElement>(
-                ".mobile-nav-close"
-            )
+        let mobileNavOpen =
+            document.querySelector<HTMLElement>(".mobile-nav-open");
+        let mobileNavClose =
+            document.querySelector<HTMLElement>(".mobile-nav-close");
 
-
-            if (mobileNavOpen) {
-                if (mobileNavClose)  {
-                    console.log('here')
-                    mobileNavClose.style.transform = "translateX(60px)"
-                    mobileNavOpen.style.transform = "translateX(0px)"
-                } else {
-                    mobileNavOpen.style.transform = "translateX(60px)";
-                }
-                setTimeout(() => toggleMobileNav(!mobileNav), 200);
+        if (mobileNavOpen) {
+            if (mobileNavClose) {
+                console.log("here");
+                mobileNavClose.style.transform = "translateX(60px)";
+                mobileNavOpen.style.transform = "translateX(0px)";
+            } else {
+                mobileNavOpen.style.transform = "translateX(60px)";
             }
-                
+            setTimeout(() => toggleMobileNav(!mobileNav), 200);
+        }
 
-            // setTimeout(() => toggleMobileNav(!mobileNav), 200)
-            // toggleMobileNav(!mobileNav);
+        // setTimeout(() => toggleMobileNav(!mobileNav), 200)
+        // toggleMobileNav(!mobileNav);
     };
-
 
     return (
         <div className="md:static h-12 flex justify-between items-center py-12 px-6 md:px-12">
@@ -91,7 +87,7 @@ const Header = () => {
                 )}
                 <ul
                     className={`${mobileNav ? "w-3/4 visible" : "w-0 invisible"}
-                            z-[100] h-screen fixed top-0 right-0 flex flex-col items-center justify-center space-y-8 bg-gray-300 dark:bg-lightMainColor
+                            z-[100] h-screen fixed top-0 right-0 flex flex-col items-center justify-end space-y-8 bg-gray-300 dark:bg-lightMainColor
                             md:h-[initial] md:w-[initial] md:static md:flex md:flex-row md:space-x-8 md:space-y-0 md:bg-[initial] md:transition-none`}
                 >
                     {navItems.map((navItem, index) => (
@@ -109,12 +105,21 @@ const Header = () => {
                             </span>
                         </li>
                     ))}
-                    <CommonButton
-                        cssClasses="scale-on-hover md:hidden w-2/3"
-                        buttonText="Resume"
-                        isPrimary={false}
-                        width="1/4"
-                    />
+                    {/* FORCED STYLES HAPPENING HERE THROUGH THE USE OF '!', space-y- style on ul overwrite the margin styles below without the '!' */}
+                    <div className="!mt-40 !mb-4 space-y-4 text-center">
+                        <CommonButton
+                            cssClasses="scale-on-hover md:hidden w-2/3"
+                            buttonText="Resume"
+                            isPrimary={false}
+                            width="1/4"
+                        />
+                        <div className="md:hidden flex items-center space-x-2 text-lg">
+                            <FiMail />
+                            <p className="tracking-wide">
+                                basitbalogun10@gmail.com
+                            </p>
+                        </div>
+                    </div>
                 </ul>
 
                 {theme == "light" ? (

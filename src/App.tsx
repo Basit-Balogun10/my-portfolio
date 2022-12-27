@@ -40,9 +40,10 @@ const toggleThemeMode = () => {
   return (
       <ThemeProvider value={{ theme, setTheme, toggleThemeMode }}>
           <div className="App">
-              <div className="fixed right-4 bottom-16">
-                  <p>basitbalogun10@gmail.com</p>
-              </div>
+            <div className="hidden md:block">
+                  <p className='fixed -right-[3.2rem] bottom-56 rotate-90 tracking-wider'>basitbalogun10@gmail.com</p>
+                <div className="fixed bottom-0 right-14 h-28 border border-mainColor/70 dark:border-slate-400"></div>
+            </div>
               <SocialMediaLinks />
 
               <Header />
