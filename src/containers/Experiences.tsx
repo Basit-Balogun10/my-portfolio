@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
 
-import ButtonTabs from '../components/ButtonTabs';
-import Experience from '../components/Experience';
+import ButtonTabs from "../components/ButtonTabs";
+import Experience from "../components/Experience";
 
-import { experienceType } from '../components/Experience';
-import { tabType } from '../components/ButtonTabs';
+import { experienceType } from "../components/Experience";
+import { tabType } from "../components/ButtonTabs";
 
 const myExperiences: experienceType[] = [
     {
@@ -47,34 +47,63 @@ const myExperiences: experienceType[] = [
     },
 ];
 
-const tabs: tabType[]= [
-  {
-    title: "Full-time",
-    isActive: false,
-    icon: IoMdMoon
-  },
-  {
-    title: "Volunteering",
-    isActive: true,
-    icon: IoMdSunny
-  },
-]
+const tabs: tabType[] = [
+    {
+        displayName: "All",
+        title: "all",
+    },
+    {
+        displayName: "Full-time",
+        title: "full time",
+    },
+    {
+        displayName: "Volunteering",
+        title: "volunteering",
+    },
+];
 
 const Experiences = () => {
-  return (
-      <section>
-          <h4>Rhetorical question?</h4>
-          <h2>Where I've worked</h2>
+    const handleActiveTabChange = (category: string) => {
+        // const updatedTabItems = techStacks.filter(
+        //     (techStack) => category in techStacks.categories
+        // );
+        // setActiveTabItems(updatedTabItems);
+    };
+    return (
+        <section className="my-20 px-7 lg:px-60">
+            {/* <h2 className="relative lg:block flex items-center justify-center mb-8 lg:mb-4 font-comfortaa text-2xl dark:text-white lg:after:block after:absolute after:w-full lg:after:w-[52%] after:mt-6 lg:after:mt-0 lg:after:ml-[31rem] after:bottom-0 lg:after:bottom-auto lg:after:top-1/2  after:border-[1.5px] lg:after:border after:border-mainColor dark:after:border-slate-400 overflow-x-hidden overflow-y-hidden"> */}
+            <h2 className="relative xl:block flex items-center justify-center mb-6 xl:mb-4 font-comfortaa text-2xl dark:text-white xl:after:block after:absolute xl:after:w-3/5 xl:after:mt-0 xl:after:ml-[33rem] xl:after:top-1/2 xl:after:border after:border-mainColor dark:after:border-slate-400 overflow-hidden">
+                <span className="font-pacifico lg:font-extrabold mb-2 lg:mb-0 sm:mr-4 lg:mr-4 text-3xl lg:text-2xl text-dimmedSecondaryColor dark:text-secondaryColor ">
+                    03.
+                </span>
+                <span className="font-semibold lg:font-extrabold text-center xl:text-left">
+                    And the Experience I've Gained So Far
+                </span>
+            </h2>
 
-          <ButtonTabs tabs={tabs}/>
+            <ButtonTabs
+                tabs={tabs}
+                handleActiveTabChange={handleActiveTabChange}
+                cssClasses="justify-start space-x-2"
+            />
 
-          {
-            myExperiences.map((experience, index) => (
-              <Experience key={index} experience={experience} />
-            ))
-          }
-      </section>
-  );
-}
+            <div className="lg:px-12 mt-6 space-y-8">
+                {myExperiences.map((experience, index) => (
+                    <>
+                        <Experience
+                            key={index}
+                            experience={experience}
+                            hasBottomBorder={
+                                index === myExperiences.length - 1
+                                    ? false
+                                    : true
+                            }
+                        />
+                    </>
+                ))}
+            </div>
+        </section>
+    );
+};
 
-export default Experiences
+export default Experiences;

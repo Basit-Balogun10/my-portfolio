@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     darkMode: "class",
     theme: {
         extend: {
@@ -18,10 +15,15 @@ module.exports = {
                 sec2: "#5336BF",
             },
             fontFamily: {
-                syne: ['Syne', 'sans-serif'],
-                comfortaa: ['Comfortaa', 'sans-serif'],
-                pacifico: ['Pacifico', 'sans-serif']
+                syne: ["Syne", "sans-serif"],
+                comfortaa: ["Comfortaa", "sans-serif"],
+                pacifico: ["Pacifico", "sans-serif"],
             },
+            screens: {
+                'sm': '570px',
+                'lg': '950px',
+                'xl': '1200px'
+            }
         },
     },
     plugins: [],

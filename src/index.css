@@ -91,3 +91,15 @@ a {
 #my-pic:hover {
     transform: scale(1.05);
 }
+
+.button-tab::after {
+    transition: width 0.3s ease-in-out;
+}
+
+.button-tab-item {
+    transition: color 0.1s ease-in-out;
+}
+
+.techstack-list {
+    transition: height 0.2s ease-in-out;
+}
