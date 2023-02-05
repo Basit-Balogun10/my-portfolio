@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import {
     FaJs,
@@ -141,12 +142,6 @@ const techStacks: techStacksType[] = [
         icon: FaReact,
         categories: ["all", "libs/frameworks"],
     },
-    {
-        id: 6,
-        name: "Python Unittest",
-        icon: FaReact,
-        categories: ["all", "libs/frameworks"],
-    },
 ];
 
 const tabs: tabType[] = [
@@ -182,8 +177,12 @@ const About = () => {
     };
 
     return (
-        <section className="my-20 px-7 lg:px-44 xl:px-60">
-            <h2 className="relative mb-4 font-extrabold font-comfortaa text-2xl dark:text-white after:block lg:after:absolute lg:after:mt-0 lg:after:w-4/5 lg:after:ml-[17rem] after:top-1/2 after:border after:border-mainColor dark:after:border-slate-400 overflow-hidden">
+        <section id="about" className="my-20 px-7 lg:px-44 xl:px-60">
+            <h2
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                className="relative mb-4 font-extrabold font-comfortaa text-2xl dark:text-white after:block lg:after:absolute lg:after:mt-0 lg:after:w-4/5 lg:after:ml-[17rem] after:top-1/2 after:border after:border-mainColor dark:after:border-slate-400 overflow-hidden"
+            >
                 <span className="font-pacifico mr-4 text-dimmedSecondaryColor dark:text-secondaryColor">
                     01.
                 </span>
@@ -191,11 +190,15 @@ const About = () => {
             </h2>
 
             <div className="flex lg:justify-center lg:items-center flex-col-reverse lg:flex-row flex-wrap lg:flex-nowrap lg:space-x-14 text-lg leading-relaxed">
-                <div className="lg:w-3/5 xl:w-3/5">
+                <div
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="lg:w-3/5 xl:w-3/5"
+                >
                     <div>
                         <p className="mb-3">
-                            What's up? I am Basit and I enjoy creating
-                            things that live on the internet. My interest in web
+                            What's up? I am Basit and I enjoy creating things
+                            that live on the internet. My interest in web
                             development started back in 2012 when I decided to
                             try editing custom Tumblr themes — turns out hacking
                             together a custom reblog button taught me a lot
@@ -219,12 +222,18 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="lg:self-start xl:self-center xl:w-2/5 mt-4 lg:mt:0 mb-8 lg:mb-0">
+                <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    className="lg:self-start xl:self-center xl:w-2/5 mt-4 lg:mt:0 mb-8 lg:mb-0"
+                >
+                    <AnimationOnScroll animateIn="animate__bounceIn">
                     <img
                         id="my-pic"
-                        className="mx-auto h-72 w-72 sm:h-96 sm:w-96 lg:h-[16rem] lg:w-[16rem] xl:h-[22rem] xl:w-[22rem] rounded-full shadow-black shadow-lg lg:grayscale-[0.7] hover:grayscale-0 object-cover"
+                        className="mx-auto h-72 w-72 sm:h-96 sm:w-96 lg:h-[16rem] lg:w-[16rem] xl:h-[20rem] xl:w-[20rem] rounded-full shadow-black shadow-lg lg:grayscale-[0.7] hover:grayscale-0 object-cover"
                         src="/images/me_rounded.png"
                     />
+                    </AnimationOnScroll>
                     {/* <div className="absolute -top-4 -left-4  h-[22rem] w-[22rem] border-[3px] border-secondaryColor rounded-full"></div> */}
                 </div>
             </div>
@@ -234,7 +243,11 @@ const About = () => {
                     tabs={tabs}
                     handleActiveTabChange={handleActiveTabChange}
                 />
-                <ul className="techstack-list mt-4 flex items-end justify-center flex-wrap space-y-3">
+                <ul
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    className="techstack-list mt-4 flex items-end justify-center flex-wrap space-y-3"
+                >
                     {activeTabItems.map((tech, index) => (
                         <li
                             key={index}
@@ -260,3 +273,7 @@ export default About;
 // MIN-WIDTH: 570PX; MAX-WIDTH: 1024PX (MD-SM < X < MD-LG)
 // * About section image appears too big
 // * Spacing between decimal and sections titles (experience and projects)
+
+// WHAT'S LEFT?
+// Projects and Recommendations section
+// Hyperlinking and correction of texts

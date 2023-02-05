@@ -2,26 +2,26 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 interface propsType {
     experience: experienceType;
-    hasBottomBorder: boolean;
 }
 
 export interface experienceType {
-    type: string;
-    role: string;
-    organization: string;
-    startDate: string;
-    endDate: string;
+    categories: string[];
     contributions: string[];
+    endDate: string;
+    organization: string;
+    projectGithubRepo?: string;
+    projectLiveLink?: string;
+    role: string;
+    startDate: string;
+    type: "full-time" | "volunteering";
 }
 
-const Experience = ({ experience, hasBottomBorder }: propsType) => {
+const Experience = ({ experience }: propsType) => {
     return (
         <div
-            className={`space-y-6 ${
-                hasBottomBorder
-                    ? "after:block after:mt-8 after:w-full after:border after:border-mainColor dark:after:border-slate-400"
-                    : ""
-            }`}
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className="space-y-6 after:block after:mt-8 after:w-full after:border after:border-mainColor dark:after:border-slate-400"
         >
             <div>
                 <h4 className="text-xl font-medium text-dimmedSecondaryColor dark:text-secondaryColor">
@@ -43,6 +43,30 @@ const Experience = ({ experience, hasBottomBorder }: propsType) => {
                     </li>
                 ))}
             </ul>
+            <div>
+                {experience.projectGithubRepo && (
+                    <p className="font-comfortaa text-sm text-dimmedSecondaryColor dark:text-secondaryColor">
+                        Github repository:{" "}
+                        <a
+                            href={experience.projectGithubRepo}
+                            className="hover:underline"
+                        >
+                            {experience.projectGithubRepo}
+                        </a>
+                    </p>
+                )}
+                {experience.projectLiveLink && (
+                    <p className="font-comfortaa text-sm text-dimmedSecondaryColor dark:text-secondaryColor text-ellipsis overflow-hidden sm:overflow-auto">
+                        Website here:{" "}
+                        <a
+                            href={experience.projectLiveLink}
+                            className="hover:underline"
+                        >
+                            {experience.projectLiveLink}
+                        </a>
+                    </p>
+                )}
+            </div>
         </div>
     );
 };

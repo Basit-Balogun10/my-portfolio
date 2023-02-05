@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "animate.css/animate.min.css"
 
 import About from "./containers/About";
 import Hero from "./containers/Hero";
@@ -8,6 +9,7 @@ import Header from "./components/Header";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Experiences from "./containers/Experiences";
 import Projects from "./containers/Projects";
+import Recommendations from "./containers/Recommendations";
 
 function App() {
     const [theme, setTheme] = useState<string>("light");
@@ -53,6 +55,7 @@ function App() {
                 <About />
                 <Projects />
                 <Experiences />
+                <Recommendations />
                 <Contact />
             </div>
         </ThemeProvider>

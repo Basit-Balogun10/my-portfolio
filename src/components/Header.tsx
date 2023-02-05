@@ -27,7 +27,7 @@ const navItems: navItemsType[] = [
     },
     {
         id: 4,
-        title: "Contact",
+        title: "Recommendations",
     },
 ];
 
@@ -70,7 +70,11 @@ const Header = () => {
             ></div>
 
             {/* LOGO */}
-            <h1 className="flex items-center space-x-2 font-pacifico text-3xl lg:text-4xl text-dimmedSecondaryColor dark:text-secondaryColor">
+            <h1
+                data-aos="fade-right"
+                data-aos-duration="500"
+                className="flex items-center space-x-2 font-pacifico text-3xl lg:text-4xl text-dimmedSecondaryColor dark:text-secondaryColor"
+            >
                 <FaLaptopCode />
                 <span className="theme-toggle font-pacifico">BB</span>
             </h1>
@@ -86,6 +90,8 @@ const Header = () => {
                     />
                 )}
                 <ul
+                    data-aos={`${!mobileNav ? "fade-left" : ""}`}
+                    data-aos-duration={`${!mobileNav ? "1000" : ""}`}
                     className={`${mobileNav ? "w-3/4 visible" : "w-0 invisible"}
                             z-[100] h-screen fixed top-0 right-0 flex flex-col items-center justify-end space-y-8 bg-gray-300 dark:bg-lightMainColor
                             lg:h-[initial] lg:w-[initial] lg:static lg:flex lg:flex-row lg:space-x-8 lg:space-y-0 lg:bg-[initial] lg:transition-none`}
@@ -100,17 +106,30 @@ const Header = () => {
                             <span className="text-dimmedSecondaryColor dark:text-secondaryColor">
                                 0{index + 1}.
                             </span>
-                            <span className="hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor hover:underline underline-offset-4">
-                                {navItem.title}
+                            <span
+                                onClick={() => {
+                                    mobileNav &&
+                                        handleMobileNavToggle();
+                                }}
+                            >
+                                <a
+                                    href={`/#${navItem.title.toLowerCase()}`}
+                                    className="hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor hover:underline underline-offset-4"
+                                >
+                                    {navItem.title}
+                                </a>
                             </span>
                         </li>
                     ))}
                     {/* FORCED STYLES HAPPENING HERE THROUGH THE USE OF '!', space-y- style on ul overwrite the margin styles below without the '!' */}
-                    <div className="!mt-40 !mb-4 space-y-4 text-center">
+                    <div className="!mt-40 !mb-2 space-y-6 text-center">
                         <CommonButton
-                            cssClasses="scale-on-hover lg:hidden w-2/3"
+                            cssClasses="scale-on-hover lg:hidden w-2/3 px-10"
                             buttonText="Resume"
+                            href="/files/Basit Balogun.pdf"
+                            isDownloadButton={true}
                             isPrimary={false}
+                            useAnchorTag={true}
                             width="1/4"
                         />
                         <div className="lg:hidden flex items-center space-x-2 text-lg">
@@ -124,6 +143,8 @@ const Header = () => {
 
                 {theme == "light" ? (
                     <IoMdMoon
+                        data-aos="fade-left"
+                        data-aos-duration="500"
                         className="theme-toggle w-8 h-8 lg:w-8 lg:h-8 ml-6 p-1 text-dimmedSecondaryColor dark:text-secondaryColor lg:text-mainColor lg:dark:text-slate-400 hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor rounded-md cursor-pointer transition-colors ease-in-out"
                         onClick={() => {
                             toggleThemeMode();
@@ -131,12 +152,16 @@ const Header = () => {
                     />
                 ) : (
                     <IoMdSunny
+                        data-aos="fade-left"
+                        data-aos-duration="500"
                         className="theme-toggle w-8 h-8 lg:w-8 lg:h-8 ml-6 p-1 text-dimmedSecondaryColor dark:text-secondaryColor lg:text-mainColor lg:dark:text-slate-400 hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor rounded-md cursor-pointer transition-colors ease-in-out"
                         onClick={toggleThemeMode}
                     />
                 )}
                 <div ref={darkModeToggle}>
                     <AiOutlineMenuFold
+                        data-aos="fade-left"
+                        data-aos-duration="500"
                         className="mobile-nav-open lg:hidden w-8 h-8 text-dimmedSecondaryColor dark:text-secondaryColor"
                         onClick={handleMobileNavToggle}
                     />

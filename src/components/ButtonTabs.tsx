@@ -25,11 +25,11 @@ const ButtonTabs = ({
     );
 
     return (
-        <div className="">
+        <div data-aos="fade-up" data-aos-duration="1000">
             <ul
                 className={`${
                     cssClasses ? `${cssClasses}` : ""
-                } flex lg:flex-wrap text-center text-gray-500 dark:text-gray-400 after:hidden lg:after:block after:border-b after:w-full after:border-gray-700 overflow-scroll lg:overflow-hidden`}
+                } flex lg:flex-wrap text-center text-gray-500 dark:text-gray-400 after:hidden lg:after:block after:border-b after:w-full after:border-dimmedSecondaryColor dark:after:border-secondaryColor overflow-scroll lg:overflow-hidden`}
             >
                 {tabs.map((tab, index) => {
                     return (

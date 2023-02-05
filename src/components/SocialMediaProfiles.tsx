@@ -16,19 +16,19 @@ const profiles: profilesTypes[] = [
         id: 1,
         name: "GitHub",
         icon: FiGithub,
-        url: "",
+        url: "https://github.com/Basit-Balogun10",
     },
     {
         id: 2,
         name: "Twitter",
         icon: FiTwitter,
-        url: "",
+        url: "https://twitter.com/basit_balogun10",
     },
     {
         id: 3,
         name: "LinkedIn",
         icon: FiLinkedin,
-        url: "",
+        url: "https://www.linkedin.com/in/basit-balogun-3668a9220/",
     },
 ];
 
@@ -38,7 +38,9 @@ const SocialMediaProfiles = () => {
             <ul className="hidden lg:block fixed left-12 bottom-[8.5rem] space-y-8">
                 {profiles.map((profile, index) => (
                     <li key={index}>
-                        <profile.icon className="w-6 h-6" />
+                        <a href={profile.url} target="_blank">
+                            <profile.icon className="w-6 h-6" />
+                        </a>
                     </li>
                 ))}
             </ul>

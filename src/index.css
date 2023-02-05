@@ -7,12 +7,12 @@
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
 }
-
 html,
 body {
-    padding: 0;
     margin: 0;
     overflow-x: hidden;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar, .techstack-list::-webkit-scrollbar {
@@ -72,7 +72,7 @@ a {
 }
 
 .scale-on-hover {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .scale-on-hover:hover {
@@ -103,3 +103,19 @@ a {
 .techstack-list {
     transition: height 0.2s ease-in-out;
 }
+
+.common-btn {
+    position: relative;
+    /* transition: all 1s; */
+    overflow: hidden;
+}
+
+.common-btn::before {
+    transition: all 1s;
+    transform: translateX(-100%)
+}
+
+.common-btn:hover::before {
+    transform: translateX(0);
+}
+
