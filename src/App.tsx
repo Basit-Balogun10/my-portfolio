@@ -19,15 +19,9 @@ function App() {
 
     useEffect(() => {
         Aos.init();
-        if (
-            localStorage.getItem("basit-portfolio-theme") === "dark" ||
-            (!("basit-portfolio-theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-            document.documentElement.classList.add("dark");
-            setTheme("dark");
-        } else {
+        if (localStorage.getItem("basit-portfolio-theme") === "light") {
             document.documentElement.classList.remove("dark");
+            setTheme("light");
         }
     }, []);
 
