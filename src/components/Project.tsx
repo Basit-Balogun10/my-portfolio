@@ -140,7 +140,7 @@ const Project = ({ project, index }: propsType) => {
                         index % 2 === 0 ? "md:text-left" : "md:text-right"
                     } bg-gray-300 dark:bg-lighterMainColor/80 border border-gray-300 dark:border-lighterMainColor/80 rounded`}
                 >
-                    <p className="border-b pb-4">
+                    <p className="border-b border-mainColor dark:border-slate-400 pb-4">
                         <p>THE PROBLEM</p>
                         {project.problem}
                     </p>
