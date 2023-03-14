@@ -11,10 +11,14 @@ import Experiences from "./containers/Experiences";
 import Projects from "./containers/Projects";
 import Recommendations from "./containers/Recommendations";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
     const [theme, setTheme] = useState<string>("light");
 
     useEffect(() => {
+        Aos.init();
         if (
             localStorage.getItem("basit-portfolio-theme") === "dark" ||
             (!("basit-portfolio-theme" in localStorage) &&
