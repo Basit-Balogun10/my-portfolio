@@ -15,7 +15,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-    const [theme, setTheme] = useState<string>("light");
+    const [theme, setTheme] = useState<string>("dark");
 
     useEffect(() => {
         Aos.init();
