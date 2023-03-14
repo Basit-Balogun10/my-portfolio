@@ -26,8 +26,8 @@ const Contact = () => {
             <div className="space-y-10">
                 <p>
                     Whether you'd like to say "Hi" or want me to provide answers
-                    to some questions you have, you can always reach out to me
-                    through my email. Ciao!
+                    to some questions you have or you want me to clarify statements about my info on this
+                    website in order to avoid misunderstanding, you can always reach out to me through my email. Ciao!
                 </p>
                 <CommonButton
                     buttonText="Let's Talk"

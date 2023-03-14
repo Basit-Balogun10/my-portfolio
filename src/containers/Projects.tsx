@@ -23,46 +23,49 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const myProjects: projectType[] = [
     {
-        name: "Message Box Generator",
+        name: "My Portfolio Site",
         featured: true,
         description:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
+            "Do you see the 'RECURSION JOKE' in that image? Anyways, This site counts too, right? The code is open-source, took inspiration from an online portfolio for the design \
+            but it was all built by me from scratch using Vite, and the powerful CSS framework, Tailwind CSS.\
+            Don't bother clicking the live link icon for this project, or you'll be a victim of the recursion joke.\
+            Let's see what's in the next slide",
         problem:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
-        imgUrl: "/images/demo.avif",
-        liveUrl: "",
-        repoUrl: "",
-        technologyUsed: ["Next js", "Python"],
+            "I needed to showcase my skills and abilities as a developer, thought a portfolio site like this one could help with that. Also, it gives me an opportunity to build my online presence.",
+        imgUrl: "/images/my_portfolio.png",
+        liveUrl: "https://basitbalogun.vercel.app",
+        repoUrl: "https://github.com/Basit-Balogun10/my-portfolio",
+        technologyUsed: ["Vite", "Tailwind"],
         year: "2022",
         categories: ["all", "featured"],
     },
     {
-        name: "Tik-tac-toe",
+        name: "Synergy Network International's Website",
         featured: false,
         description:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
+            "This is a fullstack website built using Django, it was my first one as a developer and took months to complete. The CSS framework used was Bootstrap, Django's requests were synchronous, so I used JQuery to send AJAX requests where necessary for a satisfying experience",
         problem:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
-        liveUrl: "",
+            "There was a need to showcase the company online and a point of contact between youths looking for mentorship and mentors in the company.",
+        liveUrl: "https://synergynetworkinternational.pythonanywhere.com/",
         repoUrl: "",
-        technologyUsed: ["Next js", "Python"],
-        year: "2022",
-        imgUrl: "/images/demo.avif",
+        technologyUsed: ["Django", "Bootstrap", "JQuery"],
+        year: "2021",
+        imgUrl: "/images/sni_home.png",
         categories: ["all", "others"],
     },
     {
-        name: "Timekeepr",
+        name: "AJM Elite Coaching's Website",
         featured: true,
         description:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
+            "A single page website built using the fast frontend framework, Next JS, with its ultimate sauce of Server Side Rendering. Made use of Email JS API to receive email/feedback from customers in the contact section",
         problem:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate cum ipsa placeat! Laudantium quam voluptas, aliquam error libero, cumque rem, excepturi vero tempore quaerat eius maxime maiores sed esse cupiditate!",
-        liveUrl: "",
+            "My client wanted bring their football academy online for the world to see, so I cooked up a solution using Next J",
+        liveUrl: "https://ajmelitecoaching.vercel.app/",
         repoUrl: "",
-        technologyUsed: ["Next js", "Python"],
+        technologyUsed: ["Next JS", "Tailwind CSS", "Email JS", "Swiper JS"],
         year: "2022",
-        imgUrl: "/images/demo.avif",
-        categories: ["all", "featured"],
+        imgUrl: "/images/ajm_elite_coaching_website.png",
+        categories: ["all", "others"],
     },
 ];
 
@@ -191,3 +194,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

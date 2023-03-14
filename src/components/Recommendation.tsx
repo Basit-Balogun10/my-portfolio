@@ -30,7 +30,7 @@ const Recommendation = ({ recommendation }: propsType) => {
                     <div className="flex items-center justify-start space-x-2">
                         {recommendation.recommenderMedia.map((media, index) => (
                             <a href={media.link}>
-                                <media.icon className="w-6 h-6 mb-1" />
+                                <media.icon className="w-6 h-6 mb-1 text-dimmedSecondaryColor dark:text-secondaryColor" />
                             </a>
                         ))}
                     </div>
@@ -39,7 +39,7 @@ const Recommendation = ({ recommendation }: propsType) => {
                     {recommendation.recommenderPosition}
                 </p>
             </div>
-            <p className="text-center">{recommendation.text}</p>
+            <p className="text-center">"{recommendation.text}"</p>
         </div>
     );
 };

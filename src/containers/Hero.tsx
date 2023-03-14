@@ -51,12 +51,11 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="lg:text-left lg:w-4/5 xl:w-[55%] mt-4 lg:mt-6 mb-6 lg:mb-4 lg:text-lg opacity-70"
             >
-                I’m a software engineer with two years of experience in building
+                I’m a software engineer with eight months of professional experience in building
                 accessible and responsive websites and applications using Python
                 (Django) and Javascript (React) as the major tech-stack. I
-                maintain a focus on creating extraordinary user experience and
-                at the same time, staying motivated to keep learning and growing
-                as a professional in this field.
+                maintain a focus on creating a satisfying user experience and
+                at the same time, providing customer-focused solutions. 
             </p>
 
             <div

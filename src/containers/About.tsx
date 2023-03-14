@@ -15,133 +15,97 @@ import ButtonTabs from "../components/ButtonTabs";
 import { tabType } from "../components/ButtonTabs";
 
 interface techStacksType {
-    id: number;
     name: string;
-    icon: IconType;
+    icon: string;
     categories: string[];
 }
 
 const techStacks: techStacksType[] = [
     {
-        id: 1,
         name: "Javascript",
-        icon: FaJs,
+        icon: "javascript-original",
         categories: ["all", "languages"],
     },
     {
-        id: 2,
         name: "Python",
-        icon: FaPython,
+        icon: "python-original",
         categories: ["all", "languages"],
     },
     {
-        id: 3,
         name: "Git & GitHub",
-        icon: FaGithub,
+        icon: "git-original",
         categories: ["all", "dev tools"],
     },
     {
-        id: 4,
         name: "CSS",
-        icon: FaCss3,
+        icon: "css3-original",
         categories: ["all", "languages"],
     },
     {
-        id: 5,
         name: "HTML",
-        icon: FaHtml5,
+        icon: "html5-original",
         categories: ["all", "languages"],
     },
     {
-        id: 6,
         name: "React Native",
-        icon: FaReact,
+        icon: "react-original",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
-        name: "Django",
-        icon: FaReact,
+        name: "Django & DRF",
+        icon: "django-original",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
-        name: "DRF",
-        icon: FaReact,
-        categories: ["all", "libs/frameworks"],
-    },
-    {
-        id: 6,
         name: "Tailwind CSS",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
         name: "Next.js",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
         name: "Vite",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
         name: "Typescript",
-        icon: FaReact,
+        icon: "typescript-original",
         categories: ["all", "languages"],
     },
     {
-        id: 6,
         name: "C",
-        icon: FaReact,
+        icon: "c-original",
         categories: ["all", "languages"],
     },
     {
-        id: 6,
         name: "Vercel",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "dev tools"],
     },
     {
-        id: 6,
         name: "Netlify",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "dev tools"],
     },
     {
-        id: 6,
-        name: "AJAX",
-        icon: FaReact,
-        categories: ["all", "libs/frameworks"],
-    },
-    {
-        id: 6,
         name: "jQuery",
-        icon: FaReact,
+        icon: "jquery-original",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
         name: "Bootstrap",
-        icon: FaReact,
+        icon: "bootstrap-plain",
         categories: ["all", "libs/frameworks"],
     },
     {
-        id: 6,
         name: "Firebase",
-        icon: FaReact,
+        icon: "null",
         categories: ["all", "libs/frameworks"],
-    },
-    {
-        id: 6,
-        name: "Jest",
-        icon: FaReact,
-        categories: ["all", "libs/frameworks"],
-    },
+    }
 ];
 
 const tabs: tabType[] = [
@@ -197,27 +161,20 @@ const About = () => {
                 >
                     <div>
                         <p className="mb-3">
-                            What's up? I am Basit and I enjoy creating things
-                            that live on the internet. My interest in web
-                            development started back in 2012 when I decided to
-                            try editing custom Tumblr themes — turns out hacking
-                            together a custom reblog button taught me a lot
-                            about HTML & CSS!
+                            Greetings! How's it going? I am Basit, a diligent
+                            full-stack web developer with eight months of
+                            professional experience in responsive web
+                            development in Python (Django) and joint 1.5 years
+                            of personal, volunteering, and freelancing
+                            experience in mobile and frontend development using
                         </p>
                         <p className="mt-3">
-                            Fast-forward to today, and I’ve had the privilege of
-                            working at an advertising agency, a start-up, a huge
-                            corporation, and a student-led design studio. My
-                            main focus these days is building accessible,
-                            inclusive products and digital experiences at
-                            Upstatement for a variety of clients.
-                        </p>
-
-                        <p className="mt-3">
-                            I also recently launched a course that covers
-                            everything you need to build a web app with the
-                            Spotify API using Node & React. Here are a few
-                            technologies I’ve been working with recently:
+                            I'm focused on going above and beyond to provide the
+                            best solutions to customers, as I've built landing
+                            pages for businesses as a freelancer, while
+                            maintaining the drive to stay motivated to keep
+                            learning and growing as a professional in this
+                            field.
                         </p>
                     </div>
                 </div>
@@ -228,11 +185,11 @@ const About = () => {
                     className="lg:self-start xl:self-center xl:w-2/5 mt-4 lg:mt:0 mb-8 lg:mb-0"
                 >
                     <AnimationOnScroll animateIn="animate__bounceIn">
-                    <img
-                        id="my-pic"
-                        className="mx-auto h-72 w-72 sm:h-96 sm:w-96 lg:h-[16rem] lg:w-[16rem] xl:h-[20rem] xl:w-[20rem] rounded-full shadow-black shadow-lg lg:grayscale-[0.7] hover:grayscale-0 object-cover"
-                        src="/images/me_rounded.png"
-                    />
+                        <img
+                            id="my-pic"
+                            className="mx-auto h-72 w-72 sm:h-96 sm:w-96 lg:h-[16rem] lg:w-[16rem] xl:h-[20rem] xl:w-[20rem] rounded-full shadow-black shadow-lg lg:grayscale-[0.7] hover:grayscale-0 object-cover"
+                            src="/images/me_rounded.png"
+                        />
                     </AnimationOnScroll>
                     {/* <div className="absolute -top-4 -left-4  h-[22rem] w-[22rem] border-[3px] border-secondaryColor rounded-full"></div> */}
                 </div>
@@ -248,15 +205,36 @@ const About = () => {
                     data-aos-duration="1000"
                     className="techstack-list mt-4 flex items-end justify-center flex-wrap space-y-3"
                 >
-                    {activeTabItems.map((tech, index) => (
-                        <li
-                            key={index}
-                            className={`flex flex-col items-center justify-center space-y-2 basis-1/4 lg:basis-1/6 xl:basis-[12.5%] text-center`}
-                        >
-                            <tech.icon className="w-14 h-14" />
-                            <span className="text-sm">{tech.name}</span>
-                        </li>
-                    ))}
+                    {activeTabItems.map((tech, index) => {
+                        if (tech.icon != "null") {
+                            return (
+                                <li
+                                    key={index}
+                                    className={`flex flex-col items-center justify-center space-y-2 basis-1/4 lg:basis-1/6 xl:basis-[12.5%] text-center`}
+                                >
+                                    <img
+                                        src={`https://icongr.am/devicon/${tech.icon}.svg?size=60&color=currentColor`}
+                                    />
+                                    <span className="text-sm">{tech.name}</span>
+                                </li>
+                            );
+                        }
+                    })}
+                </ul>
+                <ul
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    className={`mt-2 flex flex-wrap md:flex-nowrap items-center justify-center space-x-4 md:space-x-12 md:list-disc`}
+                >
+                    {activeTabItems.map((tech, index) => {
+                        if (tech.icon == "null") {
+                            return (
+                                <li key={index} className="">
+                                    {tech.name}
+                                </li>
+                            );
+                        }
+                    })}
                 </ul>
             </div>
         </section>

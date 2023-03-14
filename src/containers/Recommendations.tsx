@@ -8,10 +8,10 @@ const recommendations: recommendationType[] = [
         recommender: "German Cousillas Martinez",
         recommenderPosition:
             "Former IT Director, Synergy Network International",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias voluptatum magnam nesciunt! Quae, magnam non. Nemo officiis ducimus inventore fugiat maiores suscipit architecto aliquid temporibus veniam, amet repellat ipsa!",
+        text: "As Synergy Network International's former IT director, I knew Basit would be a valuable asset for our organisation since the day I met him. His eagerness to constantly develop himself and nurture his knowledge have taken him from being an ordinary LeetCode problem-solver to mastering several technologies which he now employs both in his professional and personal projects. Alongside this, his kindness and respect towards every single member of the organisation quickly allowed Basit to integrate himself in our family. He is, indeed, a four-leave clover for whomever is lucky enough to have him in their team.",
         recommenderMedia: [
             {
-                link: "https://instagram.com/a.j.m_elite_coaching/",
+                link: "https://www.linkedin.com/in/germ%C3%A1n-cousillas-mart%C3%ADnez-5b0903241?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BPh7McEK0QRiBk8C%2BG%2Bgdlw%3D%3D",
                 icon: FiLinkedin,
             },
         ],
@@ -19,14 +19,14 @@ const recommendations: recommendationType[] = [
     {
         recommender: "James Makanjuola",
         recommenderPosition: "Football Coach at A.J.M Elite Coaching",
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur molestias voluptatum magnam nesciunt! Quae, magnam non. Nemo officiis ducimus inventore fugiat maiores suscipit architecto aliquid temporibus veniam, amet repellat ipsa!",
+        text: "Basit helped create a website for my football coaching company. I was amazed by the standard and the quality of the website he was able to create for my brand. Basit is a great communicator and does exactly what you ask of him. I fully recommend anybody to try Basit and his quality work. You will not regret it.",
         recommenderMedia: [
             {
                 link: "https://instagram.com/a.j.m_elite_coaching/",
                 icon: FiInstagram,
             },
             {
-                link: "https://instagram.com/a.j.m_elite_coaching/",
+                link: "https://www.linkedin.com/in/james-makanjuola-005455182?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BPh7McEK0QRiBk8C%2BG%2Bgdlw%3D%3D",
                 icon: FiLinkedin,
             },
         ],
