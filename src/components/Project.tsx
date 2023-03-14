@@ -46,7 +46,9 @@ const Project = ({ project, index }: propsType) => {
                     >
                         {project.name.toUpperCase()}
                     </h3>
-                    <div className={`flex flex-auto md:hidden items-center space-x-4`}>
+                    <div
+                        className={`flex flex-auto md:hidden items-center space-x-4`}
+                    >
                         <a href={project.repoUrl} target="_blank">
                             <FiGithub className="w-6 h-6 text-dimmedSecondaryColor dark:text-secondaryColor" />
                         </a>
@@ -102,25 +104,25 @@ const Project = ({ project, index }: propsType) => {
                                                 (tech, index) => (
                                                     <li
                                                         key={index}
-                                                        className="text-dimmedSecondaryColor dark:text-secondaryColor"
+                                                        className="font-comfortaa text-dimmedSecondaryColor dark:text-secondaryColor text-xs"
                                                     >
                                                         {tech}
                                                     </li>
                                                 )
                                             )}
                                         </ul>
-                                        <div className="flex items-center space-x-3">
+                                        <div className="flex items-center space-x-4">
                                             <a
                                                 href={project.repoUrl}
                                                 target="_blank"
                                             >
-                                                <FiGithub className="w-6 h-6 text-dimmedSecondaryColor dark:text-secondaryColor" />
+                                                <FiGithub className="w-5 h-5 text-dimmedSecondaryColor dark:text-secondaryColor" />
                                             </a>
                                             <a
                                                 href={project.liveUrl}
                                                 target="_blank"
                                             >
-                                                <FaExternalLinkAlt className="w-6 h-6 text-dimmedSecondaryColor dark:text-secondaryColor" />
+                                                <FaExternalLinkAlt className="w-5 h-5 text-dimmedSecondaryColor dark:text-secondaryColor" />
                                             </a>
                                         </div>
                                     </div>
@@ -151,7 +153,7 @@ const Project = ({ project, index }: propsType) => {
                         {project.technologyUsed.map((tech, index) => (
                             <li
                                 key={index}
-                                className="text-dimmedSecondaryColor dark:text-secondaryColor"
+                                className="font-comfortaa text-dimmedSecondaryColor dark:text-secondaryColor text-xs"
                             >
                                 {tech}
                             </li>

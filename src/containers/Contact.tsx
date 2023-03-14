@@ -30,9 +30,12 @@ const Contact = () => {
                     website in order to avoid misunderstanding, you can always reach out to me through my email. Ciao!
                 </p>
                 <CommonButton
+                    cssClasses="scale-on-hover block w-3/5 lg:w-[35%] mx-auto text-base"
                     buttonText="Let's Talk"
-                    cssClasses="scale-on-hover font-comfortaa w-1/2 lg:w-[35%]"
+                    href="mailto:basitbalogun10@gmail.com"
                     isPrimary={false}
+                    target="_blank"
+                    useAnchorTag={true}
                 />
             </div>
         </section>

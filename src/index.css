@@ -2,6 +2,8 @@
 @tailwind utilities;
 @tailwind components;
 
+--custom-swiper-navigation-size: 35px;
+
 :root {
     font-family: "Syne", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -39,6 +41,45 @@ html.dark body::-webkit-scrollbar-thumb,
 html.dark .techstack-list::-webkit-scrollbar-thumb {
     background: #63fb9a;
     border-radius: 20px;
+}
+
+html .swiper-button-prev, html .swiper-button-next {
+    color: #05d652e8;
+}
+
+html.dark .swiper-button-prev, html.dark .swiper-button-next{
+    color: #63fb9a;
+}
+
+html .swiper-pagination-bullet {
+    background: #05d652e8;
+}
+
+html.dark .swiper-pagination-bullet {
+    background: #63fb9a;
+}
+
+html .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #05d652e8;
+}
+
+html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #63fb9a;
+}
+
+html .swiper-pagination-bullet.swiper-pagination-bullet-active, html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+html .swiper-pagination-bullet {
+    opacity: 0.3;
+}
+
+html .swiper-navigation-size {
+    width: calc(35/ 44 * 27);
+    height: 35;
+    margin-top: calc(0px - (35/ 2));
+
 }
 
 a {
@@ -119,3 +160,14 @@ a {
     transform: translateX(0);
 }
 
+.social-media-icon {
+    transition: color, transform 0.3s ease-in-out;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.10) translateY(-5px);
+}
+
+.fixed-email {
+    transition: color 0.3s ease-in-out;
+}

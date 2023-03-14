@@ -4,7 +4,7 @@ import "animate.css/animate.min.css"
 import About from "./containers/About";
 import Hero from "./containers/Hero";
 import Contact from "./containers/Contact";
-import SocialMediaLinks from "./components/SocialMediaProfiles";
+import SocialMediaLinks from "./components/SocialMediaLinks";
 import Header from "./components/Header";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Experiences from "./containers/Experiences";
@@ -44,7 +44,7 @@ function App() {
             <div className="App">
                 <div className="hidden lg:block">
                     <p className="fixed -right-[3.2rem] bottom-56 rotate-90 tracking-wider">
-                        basitbalogun10@gmail.com
+                        <a href="mailto:basitbalogun10@gmail.com" target="_blank" className="fixed-email hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor">basitbalogun10@gmail.com</a>
                     </p>
                     <div className="fixed bottom-0 right-14 h-28 border border-mainColor/70 dark:border-slate-400"></div>
                 </div>
@@ -57,6 +57,10 @@ function App() {
                 <Experiences />
                 <Recommendations />
                 <Contact />
+                <div className="font-comfortaa w-full mx-auto text-center">
+                    <p><a href="https://github.com/bchiang7/v4" className="text-xs hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor">Design inspiration from Brittany Chiang</a></p>
+                    <p><a href="https://github.com/Basit-Balogun10" className="text-xs hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor">Built by Basit Balogun</a></p>
+                </div>
             </div>
         </ThemeProvider>
     );

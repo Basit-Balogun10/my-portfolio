@@ -20,7 +20,7 @@ const Recommendation = ({ recommendation }: propsType) => {
         <div
             data-aos="fade-down"
             data-aos-duration="1000"
-            className="w-full lg:w-2/3 my-12 mx-auto min-h-[14rem] p-6 space-y-6 border-2 border-mainColor dark:border-slate-400 rounded-md shadow-md"
+            className="w-full lg:w-2/3 my-12 mx-auto min-h-[14rem] p-6 space-y-6 bg-secondaryColor/5 dark:bg-lighterMainColor/80 border border-secondaryColor/20 dark:border-lighterMainColor/80 rounded-md shadow-md"
         >
             <div>
                 <div className="flex items-center justify-center space-x-4 lg:w-3/5 lg:mx-auto mb-2">

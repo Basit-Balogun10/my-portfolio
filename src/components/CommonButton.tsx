@@ -9,6 +9,7 @@ type propTypes = {
     marginBottom?: string;
     marginTop?: string;
     onclickHandler?: () => void;
+    target?: "_blank" | "_self";
     useAnchorTag?: boolean;
     width?: string;
 };
@@ -22,6 +23,7 @@ const CommonButton = ({
     marginBottom,
     marginTop,
     onclickHandler,
+    target = "_self",
     useAnchorTag = false,
     // Width passed as props often fails to take effect, workaround being used for now
     width,
@@ -39,6 +41,7 @@ const CommonButton = ({
                     common-btn relative overflow-hidden px-2 py-4 font-semibold text-mainColor/80  hover:text-dimmedSecondaryColor dark:hover:text-mainColor/70 bg-dimmedSecondaryColor/60 dark:bg-secondaryColor border-2 border-dimmedSecondaryColor/60 dark:border-secondaryColor hover:border-none hover:before:w-full tracking-wide rounded-md shadow-lg before:absolute before:z-[-1] before:top-0 before:left-0 before:w-0 before:h-full before:bg-mainColor dark:before:bg-secondaryColor/90 before:border-mainColor dark:before:border-secondaryColor/90 `}
                         href={href}
                         download={isDownloadButton}
+                        target={target}
                     >
                         {buttonText}
                     </a>
@@ -67,6 +70,7 @@ const CommonButton = ({
                     common-btn relative overflow-hidden  px-2 py-4 text-dimmedSecondaryColor dark:text-secondaryColor  border-2 border-dimmedSecondaryColor dark:border-secondaryColor hover:border-none hover:before:w-full tracking-wide rounded-md shadow-lg before:absolute before:z-[-1] before:top-0 before:left-0 before:w-0 before:h-full before:bg-dimmedSecondaryColor/10 dark:before:bg-secondaryColor/10 before:border-dimmedSecondaryColor/5 dark:before:border-secondaryColor/10`}
                     href={href}
                     download={isDownloadButton}
+                    target={target}
                 >
                     {buttonText}
                 </a>

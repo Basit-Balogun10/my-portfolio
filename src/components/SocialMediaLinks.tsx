@@ -32,14 +32,14 @@ const profiles: profilesTypes[] = [
     },
 ];
 
-const SocialMediaProfiles = () => {
+const SocialMediaLinks = () => {
     return (
         <>
             <ul className="hidden lg:block fixed left-12 bottom-[8.5rem] space-y-8">
                 {profiles.map((profile, index) => (
                     <li key={index}>
                         <a href={profile.url} target="_blank">
-                            <profile.icon className="w-6 h-6" />
+                            <profile.icon className="social-media-icon fixed-ele w-6 h-6 hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor" />
                         </a>
                     </li>
                 ))}
@@ -49,4 +49,4 @@ const SocialMediaProfiles = () => {
     );
 };
 
-export default SocialMediaProfiles;
+export default SocialMediaLinks;

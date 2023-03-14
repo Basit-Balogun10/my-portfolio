@@ -101,7 +101,7 @@ const Header = () => {
                             key={index}
                             className={`${
                                 mobileNav ? "visible" : "invisible"
-                            } lg:visible flex flex-col lg:flex-row items-center justify-center lg:space-x-3 text-lg lg:text-base cursor-pointer`}
+                            } lg:visible flex flex-col lg:flex-row items-center justify-center lg:space-x-3 text-lg lg:text-sm cursor-pointer lg:tracking-wide`}
                         >
                             <span className="text-dimmedSecondaryColor dark:text-secondaryColor">
                                 0{index + 1}.
@@ -135,7 +135,7 @@ const Header = () => {
                         <div className="lg:hidden flex items-center space-x-2 text-lg">
                             <FiMail />
                             <p className="tracking-wide">
-                                basitbalogun10@gmail.com
+                                <a href="mailto:basitbalogun10@gmail.com" target="_blank" className="hover:text-dimmedSecondaryColor dark:hover:text-secondaryColor">basitbalogun10@gmail.com</a>
                             </p>
                         </div>
                     </div>

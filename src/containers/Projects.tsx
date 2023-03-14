@@ -26,7 +26,7 @@ const myProjects: projectType[] = [
         name: "My Portfolio Site",
         featured: true,
         description:
-            "Do you see the 'RECURSION JOKE' in that image? Anyways, This site counts too, right? The code is open-source, took inspiration from an online portfolio for the design \
+            "Can you see the 'RECURSION JOKE' in that image? Anyways, This site counts too, right? The code is open-source and I took inspiration from an online portfolio for the design \
             but it was all built by me from scratch using Vite, and the powerful CSS framework, Tailwind CSS.\
             Don't bother clicking the live link icon for this project, or you'll be a victim of the recursion joke.\
             Let's see what's in the next slide",
@@ -51,7 +51,7 @@ const myProjects: projectType[] = [
         technologyUsed: ["Django", "Bootstrap", "JQuery"],
         year: "2021",
         imgUrl: "/images/sni_home.png",
-        categories: ["all", "others"],
+        categories: ["all", "featured"],
     },
     {
         name: "AJM Elite Coaching's Website",
@@ -59,13 +59,13 @@ const myProjects: projectType[] = [
         description:
             "A single page website built using the fast frontend framework, Next JS, with its ultimate sauce of Server Side Rendering. Made use of Email JS API to receive email/feedback from customers in the contact section",
         problem:
-            "My client wanted bring their football academy online for the world to see, so I cooked up a solution using Next J",
+            "My client wanted bring their football academy online for the world to see, so I cooked up a solution using Next.js",
         liveUrl: "https://ajmelitecoaching.vercel.app/",
         repoUrl: "",
         technologyUsed: ["Next JS", "Tailwind CSS", "Email JS", "Swiper JS"],
         year: "2022",
         imgUrl: "/images/ajm_elite_coaching_website.png",
-        categories: ["all", "others"],
+        categories: ["all", "featured"],
     },
 ];
 
@@ -156,19 +156,24 @@ const Projects = () => {
                     Keyboard,
                     Autoplay,
                 ]}
-                style={{
-                    "--swiper-navigation-color": `${
-                        theme === "light" ? "#05d652e8" : "#63fb9a"
-                    }`,
-                    "--swiper-navigation-size": "35px",
-                    "--swiper-pagination-color": `${
-                        theme === "light" ? "#05d652e8" : "#63fb9a"
-                    }`,
-                    "--swiper-pagination-bullet-inactive-opacity": "0.3",
-                    "--swiper-pagination-bullet-inactive-color": `${
-                        theme === "light" ? "#05d652e8" : "#63fb9a"
-                    }`,
-                }}
+                // THIS PIECE WORKS FINE BUT TYPESCRIPT ERROR PERSISTS DURING DEPLOYMENT
+                // SO, I RESORTED TO OVEWRITING THE APPROPRIATE PROPERTIES OF THE TARGET ELEMENTS
+                // IN index.css (WITH MORE CSS SPECIFICITY)
+
+                // style={{
+                //     "--swiper-navigation-color": `${
+                //         theme === "light" ? "#05d652e8" : "#63fb9a"
+                //     }`,
+                //     "--swiper-navigation-size": "35px",
+                //     "--swiper-pagination-color": `${
+                //         theme === "light" ? "#05d652e8" : "#63fb9a"
+                //     }`,
+                //     "--swiper-pagination-bullet-inactive-opacity": "0.3",
+                //     "--swiper-pagination-bullet-inactive-color": `${
+                //         theme === "light" ? "#05d652e8" : "#63fb9a"
+                //     }`,
+                // }}
+                
                 spaceBetween={30}
                 slidesPerView={1}
                 navigation

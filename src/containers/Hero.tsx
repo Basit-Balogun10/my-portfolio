@@ -51,11 +51,12 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="lg:text-left lg:w-4/5 xl:w-[55%] mt-4 lg:mt-6 mb-6 lg:mb-4 lg:text-lg opacity-70"
             >
-                I’m a software engineer with eight months of professional experience in building
-                accessible and responsive websites and applications using Python
-                (Django) and Javascript (React) as the major tech-stack. I
-                maintain a focus on creating a satisfying user experience and
-                at the same time, providing customer-focused solutions. 
+                I’m a software engineer with eight months of professional
+                experience in building accessible and responsive websites and
+                applications using Python (Django) and Javascript (React) as the
+                major tech-stack. I maintain a focus on creating a satisfying
+                user experience and at the same time, providing customer-focused
+                solutions.
             </p>
 
             <div
@@ -66,10 +67,11 @@ const Hero = () => {
                 <CommonButton
                     cssClasses="scale-on-hover lg:mx-0 w-3/5 lg:w-1/2 xl:w-1/4 text-base"
                     buttonText="Get in touch!"
-                    href="/#contact"
+                    href="mailto:basitbalogun10@gmail.com"
                     marginTop="6"
                     isPrimary={false}
                     useAnchorTag={true}
+                    target="_blank"
                     width="1/4"
                 />
                 <CommonButton
