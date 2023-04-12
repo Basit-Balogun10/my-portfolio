@@ -54,6 +54,20 @@ const myProjects: projectType[] = [
         categories: ["all", "featured"],
     },
     {
+        name: "NASA Daily Image Checker",
+        featured: true,
+        description:
+            "A single page application built using the MERN stack and hosted as a serverless function on Vercel. It is capable of fetching and displaying new image every day from NASA'S Astronomy Picture of the Day API. MongoDb is used to persist account credentials and it has a full server-side implementation of Google authentication",
+        problem:
+            "This app was built as an assessment in order to showcase a growth mindset and work of excellence as a potential intern in a company. And it required me to build an API using a backend stack I've never worked with prior to then and deliver in 7 days",
+        liveUrl: "https://nasa-daily-image-checker.vercel.app/",
+        repoUrl: "https://github.com/Basit-Balogun10/nasa-daily-image-checker",
+        technologyUsed: ["Mongo DB", "Express", "React", "Node.js"],
+        year: "2023",
+        imgUrl: "/images/nasa_daily_image_checker.png",
+        categories: ["all", "featured"],
+    },
+    {
         name: "AJM Elite Coaching's Website",
         featured: true,
         description:

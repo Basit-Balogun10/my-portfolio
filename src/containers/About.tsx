@@ -67,6 +67,26 @@ const techStacks: techStacksType[] = [
         categories: ["all", "libs/frameworks"],
     },
     {
+        name: "Next.js",
+        icon: "null",
+        categories: ["all", "libs/frameworks"],
+    },
+    {
+        name: "Mongo DB",
+        icon: "mongodb-original",
+        categories: ["all", "libs/frameworks"],
+    },
+    {
+        name: "Express",
+        icon: "express-original",
+        categories: ["all", "libs/frameworks"],
+    },
+    {
+        name: "Node.js",
+        icon: "nodejs-original",
+        categories: ["all", "libs/frameworks"],
+    },
+    {
         name: "Vite",
         icon: "null",
         categories: ["all", "libs/frameworks"],
@@ -161,12 +181,14 @@ const About = () => {
                 >
                     <div>
                         <p className="mb-3">
-                            Greetings! How's it going? I am Basit, a diligent
+                            Greetings! How's it going? I am Basit, A diligent
                             full-stack web developer with eight months of
                             professional experience in responsive web
                             development in Python (Django) and joint 1.5 years
                             of personal, volunteering, and freelancing
-                            experience in mobile and frontend development using
+                            experience in mobile, frontend, and most recently,
+                            full-stack development using React Native, NextJS,
+                            MongoDB, Express, React, and Node.js.
                         </p>
                         <p className="mt-3">
                             I'm focused on going above and beyond to provide the

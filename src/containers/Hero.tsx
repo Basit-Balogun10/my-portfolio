@@ -54,7 +54,7 @@ const Hero = () => {
                 I’m a software engineer with eight months of professional
                 experience in building accessible and responsive websites and
                 applications using Python (Django) and Javascript (React) as the
-                major tech-stack. I maintain a focus on creating a satisfying
+                major tech-stack, and also capable of building full-stack applications using the MERN stack. I maintain a focus on creating a satisfying
                 user experience and at the same time, providing customer-focused
                 solutions.
             </p>
