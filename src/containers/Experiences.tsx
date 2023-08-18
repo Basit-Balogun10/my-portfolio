@@ -17,7 +17,7 @@ const myExperiences: experienceType[] = [
         endDate: "September 2022",
         contributions: [
             "I delivered talks and facilitated hands-on practical projects for students in selected secondary schools in Lagos, Nigeria.",
-            "We show them what can be built with skills revolving around STEM, hence increasing their passion to pursue a career in STEM",
+            "We showed them what can be built with skills revolving around STEM, hence increasing their passion to pursue a career in STEM",
         ],
         categories: ["all", "volunteering"],
     },
@@ -43,14 +43,33 @@ const myExperiences: experienceType[] = [
         startDate: "March 2021",
         endDate: "Jan 2022",
         contributions: [
-            "As a sole member of the development team for a few months, using Python, I built a full-stack Django website as a point of contact between youths looking for mentorship and mentors in the company. Website link beow",
-            "Built a “Quick Login” feature to display login forms to users and speed up authentication to about 15% faster as they won't have to navigate to the login page.",
-            "Provided a satisfying User Experience with a smooth, animated user interface styled with Bootstrap.",
-            "Used Jquery and AJAX requests to prevent page reload by blog actions (liking and commenting) for better User Experience.",
+            "As a sole member of the team for a few months, I built a full-stack Django web app as a point of contact between youths looking for mentorship and mentors in the company. Website link below",
+            "Using Django ‘auth_views’ and email system, I implemented a rich and secure authentication system featuring password change and reset, account activation, email address verification, and email notifications on changes in user credentials among others.",
+            "Implemented a “Quick Login” feature to display login forms to visitors and speed up authentication to about 15% as they won't have to navigate to the login page.",
+            "Provided a satisfying User Experience with a smooth, animated user interface using Bootstrap",
+            "Improved engagements in the blog by ensuring there is no page reload as a result of blog actions (like, comments and replies) using JQuery and AJAX requests",
         ],
         categories: ["all", "full time"],
         projectLiveLink:
             "https://synergynetworkinternational.pythonanywhere.com/",
+    },
+    {
+        type: "full-time",
+        role: "Software Engineering Intern",
+        organization: "Matt Young Media",
+        startDate: "April 2023",
+        endDate: "Present",
+        contributions: [
+            "Developed and implemented a React/TypeScript web application, utilizing Jest for unit testing and GitHub Actions for CI/CD, to optimize internal processes and reduce build times by 10%",
+            "Joined and collaborated with a cross-functional development team of a LinkedIn leads generation and management tool across multiple domains like ML, Design and Product Management, during critical pre-release stages of a LinkedIn leads generation and management tool",
+            "Together with the team, I implemented enhancement features, whilst fixing subtle and critical bugs and issues, dramatically improving system stability to improve user experience, optimize product quality and reduce crashes by at least 20% prior to launch",
+            "I provided valuable insights and perspectives targeted at product enhancements/improvements during team discussions and sometimes through written documents, ensuring that users get the optimal value from the service.",
+            "Additionally, I spearheaded and played a crucial role in the development of a doc-status client management tool using React, Node.js, Express and MongoDB with instrumental contributions to ensuring efficient deployment processes.",
+            "Built highly collaborative relationships across engineering and non-engineering teams and networked extensively with fellow interns and existing staff members hence, building a reputation as an enthusiastic team player and achieving shared success on several occasions with the team",
+            "Exhibited an initiative in reaching out to non-engineers and collaborating effectively as a team, using my ability to communicate and engage with individuals from diverse backgrounds and roles, hence contributing massively to a positive team dynamic and strengthening the overall workflow",
+            "Demonstrated great attention to detail and continually sought out feedback and self-improvement opportunities through a growth mindset and eagerness to learn with exuded passion and energy.",
+        ],
+        categories: ["all", "full time"],
     },
 ];
 
