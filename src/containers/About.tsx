@@ -181,14 +181,8 @@ const About = () => {
                 >
                     <div>
                         <p className="mb-3">
-                            Greetings! How's it going? I am Basit, A diligent
-                            full-stack web developer with eight months of
-                            professional experience in responsive web
-                            development in Python (Django) and joint 1.5 years
-                            of personal, volunteering, and freelancing
-                            experience in mobile, frontend, and most recently,
-                            full-stack development using React Native, NextJS,
-                            MongoDB, Express, React, and Node.js.
+                            Greetings! How's it going? I am Basit, A diligent software engineer with 1.3 years of industrial experience in responsive software development in Python (Django), MongoDB, Express, React, and
+Node.js. Coupled with a joint 2 years of personal, volunteering, and freelancing experience in mobile and frontend development using React Native, NextJS. 
                         </p>
                         <p className="mt-3">
                             I'm focused on going above and beyond to provide the
