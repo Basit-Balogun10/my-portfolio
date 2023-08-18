@@ -51,10 +51,9 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="lg:text-left lg:w-4/5 xl:w-[55%] mt-4 lg:mt-6 mb-6 lg:mb-4 lg:text-lg opacity-70"
             >
-                I’m a software engineer with eight months of professional
-                experience in building accessible and responsive websites and
-                applications using Python (Django) and Javascript (React) as the
-                major tech-stack, and also capable of building full-stack applications using the MERN stack. I maintain a focus on creating a satisfying
+                I’m a software engineer with 1.3 years of industrial
+                experience in responsive software development in Python (Django), MongoDB, Express, React, and
+                Node.js. I maintain a focus on creating a satisfying
                 user experience and at the same time, providing customer-focused
                 solutions.
             </p>
