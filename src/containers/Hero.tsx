@@ -51,11 +51,10 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="lg:text-left lg:w-4/5 xl:w-[55%] mt-4 lg:mt-6 mb-6 lg:mb-4 lg:text-lg opacity-70"
             >
-                I’m a software engineer with 1.3 years of industrial
-                experience in responsive software development in Python (Django), MongoDB, Express, React, and
-                Node.js. I maintain a focus on creating a satisfying
-                user experience and at the same time, providing customer-focused
-                solutions.
+                A dedicated software engineer with 1.2 years of industry experience in software development, plus joint 2 years in mobile and
+                frontend development through personal, volunteer, and freelance projects. With a solid troubleshooting and debugging background, I
+                showcase a team-oriented personality, coupled with quick learning ability and adaptability to rapidly changing situations. I proactively
+                foster team-wide positive relationships through mutual respect, effective communication, and collaborative problem-solving
             </p>
 
             <div
