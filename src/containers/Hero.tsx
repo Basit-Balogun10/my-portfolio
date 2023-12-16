@@ -51,10 +51,7 @@ const Hero = () => {
                 data-aos-offset="50"
                 className="lg:text-left lg:w-4/5 xl:w-[55%] mt-4 lg:mt-6 mb-6 lg:mb-4 lg:text-lg opacity-70"
             >
-                A dedicated software engineer with 1.2 years of industry experience in software development, plus joint 2 years in mobile and
-                frontend development through personal, volunteer, and freelance projects. With a solid troubleshooting and debugging background, I
-                showcase a team-oriented personality, coupled with quick learning ability and adaptability to rapidly changing situations. I proactively
-                foster team-wide positive relationships through mutual respect, effective communication, and collaborative problem-solving
+                As a committed software engineer, I hold 1.5 years of professional experience in software development, bolstered by a composite 2 years in mobile and frontend development through personal initiative, volunteering, and freelance endeavors. My proficiency in troubleshooting and debugging is underpinned by a team-centric mentality, rapid learning aptitude, and resilience in the face of swiftly evolving circumstances. I actively cultivate positive team dynamics, fostering mutual respect, effective communication, and cooperative problem-solving.
             </p>
 
             <div
