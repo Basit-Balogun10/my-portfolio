@@ -102,6 +102,11 @@ const techStacks: techStacksType[] = [
         categories: ["all", "languages"],
     },
     {
+        name: "Amazon Web Services",
+        icon: "aws-original",
+        categories: ["all", "dev tools"],
+    },
+    {
         name: "Vercel",
         icon: "null",
         categories: ["all", "dev tools"],
@@ -181,8 +186,8 @@ const About = () => {
                 >
                     <div>
                         <p className="mb-3">
-                            Greetings! How's it going? I’m Basit, A dedicated software engineer with 1.2 years of industrial experience in responsive software development in Python (Django), MongoDB, Express, React, and
-Node.js. Coupled with a joint 2 years of personal, volunteering, and freelancing experience in mobile and frontend development using React Native, NextJS. 
+                            Greetings! How's it going? I’m Basit, A dedicated software engineer with 1.5 years of industrial experience in software development in Python (Django), MongoDB, Express, React, and
+Node.js. Coupled with a joint 2 years of personal, volunteering, and freelancing experience in mobile and frontend development using React Native and NextJS. 
                         </p>
                         <p className="mt-3">
                             I'm focused on going above and beyond to provide the
