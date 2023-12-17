@@ -103,7 +103,7 @@ const techStacks: techStacksType[] = [
     },
     {
         name: "Amazon Web Services",
-        icon: "aws-original",
+        icon: "amazonwebservices-original",
         categories: ["all", "dev tools"],
     },
     {
